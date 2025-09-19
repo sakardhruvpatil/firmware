@@ -1,0 +1,16 @@
+package.xml
+setup.py
+ackermann_robot/__init__.py
+ackermann_robot/kinematics_node.py
+ackermann_robot/simulation_node.py
+ackermann_robot/visualization_node.py
+ackermann_robot.egg-info/PKG-INFO
+ackermann_robot.egg-info/SOURCES.txt
+ackermann_robot.egg-info/dependency_links.txt
+ackermann_robot.egg-info/entry_points.txt
+ackermann_robot.egg-info/requires.txt
+ackermann_robot.egg-info/top_level.txt
+ackermann_robot.egg-info/zip-safe
+config/robot_params.yaml
+launch/ackermann_robot_with_viz.launch.py
+resource/ackermann_robot

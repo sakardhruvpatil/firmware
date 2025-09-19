@@ -1,0 +1,5 @@
+[console_scripts]
+kinematics_node = ackermann_robot.kinematics_node:main
+simulation_node = ackermann_robot.simulation_node:main
+visualization_node = ackermann_robot.visualization_node:main
+

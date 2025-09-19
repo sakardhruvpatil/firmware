@@ -1,0 +1,56 @@
+[0.261s] Invoking command in '/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/src/ackermann_robot': PYTHONPATH=/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ackermann_robot build --build-base /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build install --record /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/install.log --single-version-externally-managed install_data
+[0.366s] running egg_info
+[0.366s] creating ../../build/ackermann_robot/ackermann_robot.egg-info
+[0.366s] writing ../../build/ackermann_robot/ackermann_robot.egg-info/PKG-INFO
+[0.366s] writing dependency_links to ../../build/ackermann_robot/ackermann_robot.egg-info/dependency_links.txt
+[0.367s] writing entry points to ../../build/ackermann_robot/ackermann_robot.egg-info/entry_points.txt
+[0.367s] writing requirements to ../../build/ackermann_robot/ackermann_robot.egg-info/requires.txt
+[0.367s] writing top-level names to ../../build/ackermann_robot/ackermann_robot.egg-info/top_level.txt
+[0.367s] writing manifest file '../../build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[0.367s] reading manifest file '../../build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[0.368s] writing manifest file '../../build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[0.368s] running build
+[0.368s] running build_py
+[0.368s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build
+[0.368s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib
+[0.368s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[0.368s] copying ackermann_robot/__init__.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[0.368s] copying ackermann_robot/kinematics_node.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[0.368s] copying ackermann_robot/hardware_interface.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[0.368s] copying ackermann_robot/teleop_node.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[0.368s] copying ackermann_robot/improved_motor_driver.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[0.368s] copying ackermann_robot/simulation_node.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[0.368s] running install
+[0.368s] running install_lib
+[0.369s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[0.369s] copying /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/__init__.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[0.369s] copying /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/kinematics_node.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[0.369s] copying /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/hardware_interface.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[0.369s] copying /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/teleop_node.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[0.369s] copying /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/improved_motor_driver.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[0.369s] copying /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/simulation_node.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[0.369s] byte-compiling /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/__init__.py to __init__.cpython-310.pyc
+[0.369s] byte-compiling /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/kinematics_node.py to kinematics_node.cpython-310.pyc
+[0.370s] byte-compiling /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/hardware_interface.py to hardware_interface.cpython-310.pyc
+[0.371s] byte-compiling /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/teleop_node.py to teleop_node.cpython-310.pyc
+[0.372s] byte-compiling /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/improved_motor_driver.py to improved_motor_driver.cpython-310.pyc
+[0.373s] byte-compiling /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/simulation_node.py to simulation_node.cpython-310.pyc
+[0.374s] running install_data
+[0.374s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ament_index
+[0.374s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ament_index/resource_index
+[0.374s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ament_index/resource_index/packages
+[0.374s] copying resource/ackermann_robot -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ament_index/resource_index/packages
+[0.374s] copying package.xml -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot
+[0.374s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/launch
+[0.374s] copying launch/ackermann_robot.launch.py -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/launch
+[0.374s] creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/config
+[0.374s] copying config/robot_params.yaml -> /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/config
+[0.374s] running install_egg_info
+[0.375s] Copying ../../build/ackermann_robot/ackermann_robot.egg-info to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info
+[0.375s] running install_scripts
+[0.385s] Installing hardware_interface script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.385s] Installing kinematics_node script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.385s] Installing simulation_node script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.385s] Installing teleop_node script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.385s] writing list of installed files to '/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/install.log'
+[0.396s] Invoked command in '/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/src/ackermann_robot' returned '0': PYTHONPATH=/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ackermann_robot build --build-base /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build install --record /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/install.log --single-version-externally-managed install_data

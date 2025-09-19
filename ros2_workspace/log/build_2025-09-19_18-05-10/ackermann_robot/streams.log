@@ -1,0 +1,20 @@
+[0.262s] Invoking command in '/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot': PYTHONPATH=/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build --no-deps symlink_data
+[0.376s] running develop
+[0.442s] running egg_info
+[0.442s] writing ackermann_robot.egg-info/PKG-INFO
+[0.442s] writing dependency_links to ackermann_robot.egg-info/dependency_links.txt
+[0.442s] writing entry points to ackermann_robot.egg-info/entry_points.txt
+[0.442s] writing requirements to ackermann_robot.egg-info/requires.txt
+[0.442s] writing top-level names to ackermann_robot.egg-info/top_level.txt
+[0.443s] reading manifest file 'ackermann_robot.egg-info/SOURCES.txt'
+[0.443s] writing manifest file 'ackermann_robot.egg-info/SOURCES.txt'
+[0.444s] running build_ext
+[0.444s] Creating /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann-robot.egg-link (link to .)
+[0.444s] Installing hardware_interface script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.444s] Installing kinematics_node script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.444s] Installing simulation_node script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.444s] Installing teleop_node script to /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/bin
+[0.444s] 
+[0.444s] Installed /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot
+[0.444s] running symlink_data
+[0.456s] Invoked command in '/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot' returned '0': PYTHONPATH=/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sakar04/Documents/PlatformIO/Projects/firmware/ros2_workspace/build/ackermann_robot/build --no-deps symlink_data

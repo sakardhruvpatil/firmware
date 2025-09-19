@@ -1,0 +1,25 @@
+{
+  "serial_port": "/dev/ttyACM0",
+  "baud_rate": 115200,
+  "serial_timeout": 0.1,
+  "reconnect_interval": 5.0,
+  
+  "cmd_vel_topic": "cmd_vel",
+  "rpm_topics": [
+    "wheel_rpm_left",
+    "wheel_rpm_right",
+    "wheel_rpm_motor3",
+    "wheel_rpm_motor4"
+  ],
+  "diagnostics_topic": "diagnostics",
+  
+  "json_buffer_size": 256,
+  "command_queue_maxsize": 100,
+  "status_timeout": 2.0,
+  
+  "max_command_rate": 50.0,
+  "max_status_age": 1.0,
+  
+  "log_level": "INFO",
+  "log_file": null
+}
