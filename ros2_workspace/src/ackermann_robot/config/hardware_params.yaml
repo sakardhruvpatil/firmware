@@ -1,0 +1,54 @@
+# Hardware configuration for Jetson Orin Nano
+ackermann_robot:
+  ros__parameters:
+    # Vehicle physical parameters
+    wheelbase: 0.64  # Distance between front and rear axles (meters)
+    track_width: 0.6  # Distance between left and right wheels (meters)
+    wheel_radius: 0.05  # Wheel radius (meters)
+    
+    # Motor and servo parameters
+    max_speed: 2.0  # Maximum speed (m/s)
+    max_steering_angle: 0.52  # Maximum steering angle (radians, ~30 degrees)
+    
+    # Hardware interfaces
+    stm32_port: "/dev/ttyACM0"
+    stm32_baudrate: 115200
+    servo_port: "/dev/ttyUSB0"
+    servo_baudrate: 9600
+    servo_slave_id: 1
+    
+    # Control parameters
+    steering_deadband: 0.05  # Minimum steering command to ignore
+    speed_deadband: 0.1     # Minimum speed command to ignore
+    max_acceleration: 1.0   # Maximum acceleration (m/s²)
+    
+    # Safety parameters
+    emergency_stop_timeout: 2.0  # Seconds without command before stopping
+    max_safe_speed: 1.5         # Safe maximum speed for testing
+    
+    # PID parameters for motor control
+    motor_pid:
+      kp: 0.8
+      ki: 0.1
+      kd: 0.05
+      output_limit: 100.0
+    
+    # Servo parameters
+    servo_pid:
+      kp: 1.0
+      ki: 0.0
+      kd: 0.1
+      output_limit: 100.0
+    
+    # Hardware-specific delays and timeouts
+    command_timeout: 0.1      # Timeout for hardware commands
+    status_publish_rate: 10.0 # Rate for status messages (Hz)
+    
+    # Sensor parameters (if any sensors are connected)
+    use_encoders: false       # Enable if wheel encoders are available
+    use_imu: false           # Enable if IMU is connected
+    
+    # Calibration parameters
+    steering_center_offset: 0.0  # Offset to center steering (radians)
+    left_motor_bias: 1.0         # Left motor speed correction factor
+    right_motor_bias: 1.0        # Right motor speed correction factor

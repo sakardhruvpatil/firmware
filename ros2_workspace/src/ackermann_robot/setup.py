@@ -11,9 +11,13 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', [
-            'launch/ackermann_robot_with_viz.launch.py'
+            'launch/ackermann_robot_with_viz.launch.py',
+            'launch/ackermann_robot_hardware.launch.py'
         ]),
-        ('share/' + package_name + '/config', ['config/robot_params.yaml']),
+        ('share/' + package_name + '/config', [
+            'config/robot_params.yaml',
+            'config/hardware_params.yaml'
+        ]),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,6 +31,7 @@ setup(
             'kinematics_node = ackermann_robot.kinematics_node:main',
             'simulation_node = ackermann_robot.simulation_node:main',
             'visualization_node = ackermann_robot.visualization_node:main',
+            'hardware_interface = ackermann_robot.hardware_interface:main',
         ],
     },
 )
