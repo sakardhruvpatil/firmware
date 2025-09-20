@@ -364,7 +364,56 @@ float calculateRPM(uint8_t motorIndex) {
  * @param command Text command string
  * @return true if command was successfully executed
  */
+/**
+ * @brief Process a single motor command or system command
+ * @param command Single command string (e.g., "M1:50", "STOP", "STATUS")
+ * @return true if command was successfully executed
+ */
+bool processSingleMotorCommand(const String& command);
+
+/**
+ * @brief Process text-based command input (supports single and multi-motor commands)
+ * @param command Command string to process
+ * @return true if command was successfully executed
+ */
 bool processTextCommand(const String& command) {
+    String cmd = command;
+    cmd.trim();
+    
+    // Check if this is a multi-motor command (contains commas)
+    if (cmd.indexOf(',') > 0) {
+        // Parse comma-separated motor commands: M1:50,M2:30,M3:25,M4:10
+        bool allSuccess = true;
+        int startPos = 0;
+        
+        while (startPos < cmd.length()) {
+            int commaPos = cmd.indexOf(',', startPos);
+            if (commaPos == -1) commaPos = cmd.length();
+            
+            String singleCmd = cmd.substring(startPos, commaPos);
+            singleCmd.trim();
+            
+            if (singleCmd.length() > 0) {
+                bool success = processSingleMotorCommand(singleCmd);
+                if (!success) allSuccess = false;
+            }
+            
+            startPos = commaPos + 1;
+        }
+        return allSuccess;
+    }
+    else {
+        // Single command processing
+        return processSingleMotorCommand(cmd);
+    }
+}
+
+/**
+ * @brief Process a single motor command or system command
+ * @param command Single command string (e.g., "M1:50", "STOP", "STATUS")
+ * @return true if command was successfully executed
+ */
+bool processSingleMotorCommand(const String& command) {
     String cmd = command;
     cmd.trim();
     

@@ -1,0 +1,38 @@
+[1.119s] Invoking command in '/home/sakar_gaurd/firmware/ros2_workspace/src/ackermann_robot': PYTHONPATH=/home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ackermann_robot build --build-base /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build install --record /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/install.log --single-version-externally-managed install_data
+[1.544s] running egg_info
+[1.545s] writing ../../build/ackermann_robot/ackermann_robot.egg-info/PKG-INFO
+[1.545s] writing dependency_links to ../../build/ackermann_robot/ackermann_robot.egg-info/dependency_links.txt
+[1.546s] writing entry points to ../../build/ackermann_robot/ackermann_robot.egg-info/entry_points.txt
+[1.546s] writing requirements to ../../build/ackermann_robot/ackermann_robot.egg-info/requires.txt
+[1.546s] writing top-level names to ../../build/ackermann_robot/ackermann_robot.egg-info/top_level.txt
+[1.549s] reading manifest file '../../build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[1.551s] writing manifest file '../../build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[1.551s] running build
+[1.551s] running build_py
+[1.551s] copying ackermann_robot/hardware_interface_backup.py -> /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[1.552s] copying ackermann_robot/hardware_interface.py -> /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[1.552s] copying ackermann_robot/motor_driver.py -> /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[1.553s] running install
+[1.553s] running install_lib
+[1.555s] copying /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/hardware_interface_backup.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.555s] copying /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/hardware_interface.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.555s] copying /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/motor_driver.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.556s] byte-compiling /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/hardware_interface_backup.py to hardware_interface_backup.cpython-310.pyc
+[1.560s]   File "/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/hardware_interface_backup.py", line 212
+[1.560s]     return False    def read_positions(self) -> tuple[float, float]:
+[1.560s]                     ^^^
+[1.560s] SyntaxError: invalid syntax
+[1.560s] 
+[1.560s] byte-compiling /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/hardware_interface.py to hardware_interface.cpython-310.pyc
+[1.562s] byte-compiling /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/motor_driver.py to motor_driver.cpython-310.pyc
+[1.564s] running install_data
+[1.565s] running install_egg_info
+[1.568s] removing '/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info' (and everything under it)
+[1.569s] Copying ../../build/ackermann_robot/ackermann_robot.egg-info to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info
+[1.570s] running install_scripts
+[1.611s] Installing hardware_interface script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+[1.612s] Installing kinematics_node script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+[1.612s] Installing simulation_node script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+[1.613s] Installing visualization_node script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+[1.613s] writing list of installed files to '/home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/install.log'
+[1.681s] Invoked command in '/home/sakar_gaurd/firmware/ros2_workspace/src/ackermann_robot' returned '0': PYTHONPATH=/home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ackermann_robot build --build-base /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build install --record /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/install.log --single-version-externally-managed install_data

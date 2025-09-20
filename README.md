@@ -7,7 +7,7 @@
 
 A professional-grade, production-ready 4-motor controller system for robotics applications with real-time tachometer feedback, non-blocking control algorithms, and seamless ROS 2 integration.
 
-## 🚀 Key Features
+## Key Features
 
 ### Motor Control System
 - **4 Independent Motors**: PWM control with direction pins and acceleration/deceleration profiles
@@ -37,7 +37,7 @@ A professional-grade, production-ready 4-motor controller system for robotics ap
 | **Power Supply** | 12-24V DC (Motor voltage rating) | 1 |
 | **Connections** | Jumper wires, connectors | As needed |
 
-## 🔌 Pin Configuration
+## Pin Configuration
 
 ### Motor Control Pins
 | Motor | PWM Pin | DIR Pin | SPEED Pin | Timer Features |
@@ -115,7 +115,7 @@ Status: Ready for operation
 SYSTEM_READY
 ```
 
-## 🎮 Usage Guide
+## Usage Guide
 
 ### Basic Motor Control
 
@@ -206,7 +206,7 @@ ros2 topic echo /diagnostics
 }
 ```
 
-## 📊 System Monitoring
+## System Monitoring
 
 ### Status Message Format
 The firmware continuously reports system status every 200ms:
@@ -463,7 +463,7 @@ python3 -m pytest tests/
 - Adjust `json_buffer_size` for complex command structures
 - Set appropriate `status_timeout` for your system responsiveness
 
-## 📈 Deployment
+## Deployment
 
 ### Production Deployment
 
@@ -550,14 +550,14 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **STM32 Community**: For excellent hardware platform and tools
 - **ROS 2 Team**: For robust robotics middleware
 - **PlatformIO**: For streamlined embedded development
 - **Contributors**: Everyone who helped improve this project
 
-## 📞 Support
+## Support
 
 - **Documentation**: Complete guides in `/docs` directory
 - **Issues**: Report bugs via GitHub Issues

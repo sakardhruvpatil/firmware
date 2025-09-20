@@ -1,0 +1,5 @@
+  File "/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/hardware_interface_backup.py", line 212
+    return False    def read_positions(self) -> tuple[float, float]:
+                    ^^^
+SyntaxError: invalid syntax
+

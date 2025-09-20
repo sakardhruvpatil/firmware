@@ -272,14 +272,14 @@ def main():
     success = tester.run_all_tests()
     
     if success:
-        print("\n🎉 Hardware system is ready for robot deployment!")
+        print("\nHardware system is ready for robot deployment!")
         print("\nNext steps:")
         print("1. Connect STM32 to /dev/ttyACM0")
         print("2. Connect servo controller to /dev/ttyUSB0")
         print("3. Run: ros2 launch ackermann_robot ackermann_robot_hardware.launch.py")
         return 0
     else:
-        print("\n❌ Hardware system has issues. Please fix them before proceeding.")
+        print("\nHardware system has issues. Please fix them before proceeding.")
         return 1
 
 if __name__ == "__main__":
