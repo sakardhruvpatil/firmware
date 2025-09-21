@@ -27,7 +27,7 @@ A professional-grade, production-ready 4-motor controller system for robotics ap
 - **Production Logging**: Multi-level logging with file output and rotation support
 - **Quality Assurance**: Input validation, range checking, and error recovery
 
-## 📋 Hardware Requirements
+## Hardware Requirements
 
 | Component | Specification | Quantity |
 |-----------|---------------|----------|
@@ -53,7 +53,7 @@ A professional-grade, production-ready 4-motor controller system for robotics ap
 - **DIR Pins**: Standard GPIO for reliable direction control
 - **LED_BUILTIN**: System heartbeat and status indication
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -236,7 +236,7 @@ ros2 run rqt_robot_monitor rqt_robot_monitor
 - **Error Counters**: Parse errors, connection failures
 - **Motor Health**: Individual motor status and RPM
 
-## 🔧 Configuration Parameters
+## Configuration Parameters
 
 ### Firmware Configuration (main.cpp)
 
@@ -270,7 +270,7 @@ namespace DriveConfig {
 
 See [Configuration Management](#advanced-configuration) section for complete parameter reference.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 firmware/
@@ -567,4 +567,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **STM32 4-Motor Controller v2.0.0** - Professional Robotics Platform  
-Built with ❤️ for the robotics community
+Built with dedication for the robotics community

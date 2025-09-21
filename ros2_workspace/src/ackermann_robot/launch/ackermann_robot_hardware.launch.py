@@ -13,10 +13,11 @@ Version: 1.0.0
 """
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, GroupAction
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+from launch.conditions import IfCondition
 
 
 def generate_launch_description():
@@ -33,8 +34,26 @@ def generate_launch_description():
         description='Path to hardware configuration file'
     )
     
+    use_joystick_arg = DeclareLaunchArgument(
+        'use_joystick',
+        default_value='false',
+        description='Whether to start joystick nodes'
+    )
+    
+    joy_config_file_arg = DeclareLaunchArgument(
+        'joy_config_file',
+        default_value=PathJoinSubstitution([
+            FindPackageShare('ackermann_robot'),
+            'config',
+            'ps4_joy_config.yaml'
+        ]),
+        description='Path to joystick configuration file'
+    )
+    
     # Get launch configurations
     config_file = LaunchConfiguration('config_file')
+    use_joystick = LaunchConfiguration('use_joystick')
+    joy_config_file = LaunchConfiguration('joy_config_file')
     
     # Core hardware nodes
     kinematics_node = Node(
@@ -53,6 +72,36 @@ def generate_launch_description():
         parameters=[config_file],
         output='screen',
         emulate_tty=True,
+    )
+    
+    # Optional joystick control group
+    joystick_group = GroupAction(
+        condition=IfCondition(use_joystick),
+        actions=[
+            # Joy driver node
+            Node(
+                package='joy',
+                executable='joy_node',
+                name='joy_node',
+                parameters=[joy_config_file],
+                output='screen',
+                emulate_tty=True,
+            ),
+            
+            # Teleop twist joy node
+            Node(
+                package='teleop_twist_joy',
+                executable='teleop_node',
+                name='teleop_twist_joy_node',
+                parameters=[joy_config_file],
+                remappings=[
+                    ('cmd_vel', 'cmd_vel'),
+                    ('joy', 'joy'),
+                ],
+                output='screen',
+                emulate_tty=True,
+            ),
+        ]
     )
     
     # Static transform publishers using new-style arguments
@@ -89,10 +138,15 @@ def generate_launch_description():
     return LaunchDescription([
         # Launch arguments
         config_file_arg,
+        use_joystick_arg,
+        joy_config_file_arg,
         
         # Core hardware nodes
         kinematics_node,
         hardware_interface_node,
+        
+        # Optional joystick control
+        joystick_group,
         
         # Transform publishers
         base_link_to_base_footprint,

@@ -22,7 +22,7 @@
 - **Proper Message Flow**: `cmd_vel` → kinematics → wheel commands → hardware
 - **Real-time Feedback**: Hardware state → odometry → navigation stack
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -39,7 +39,7 @@
                        └──────────────────┘
 ```
 
-## 🔧 Hardware Configuration
+## Hardware Configuration
 
 ### Drive System (STM32)
 - **4 BLDC Motors**: Independent speed control via text commands
@@ -57,7 +57,7 @@
 - **Max Angle**: ±28° (±0.488 radians)
 - **Slave IDs**: Left=2, Right=3
 
-## ⚙️ Kinematics Implementation
+## Kinematics Implementation
 
 ### Steering Linkage Logic
 ```python

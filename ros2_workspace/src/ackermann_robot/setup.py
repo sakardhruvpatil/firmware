@@ -11,10 +11,12 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', [
-            'launch/ackermann_robot_hardware.launch.py'
+            'launch/ackermann_robot_hardware.launch.py',
+            'launch/ackermann_robot_joystick.launch.py'
         ]),
         ('share/' + package_name + '/config', [
-            'config/hardware_params.yaml'
+            'config/hardware_params.yaml',
+            'config/ps4_joy_config.yaml'
         ]),
     ],
     install_requires=['setuptools'],

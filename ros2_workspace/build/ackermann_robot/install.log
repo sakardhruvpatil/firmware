@@ -9,7 +9,9 @@
 /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ament_index/resource_index/packages/ackermann_robot
 /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/package.xml
 /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/launch/ackermann_robot_hardware.launch.py
+/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/launch/ackermann_robot_joystick.launch.py
 /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/config/hardware_params.yaml
+/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/config/ps4_joy_config.yaml
 /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info/PKG-INFO
 /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info/dependency_links.txt
 /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info/SOURCES.txt

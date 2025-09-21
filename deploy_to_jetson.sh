@@ -29,7 +29,7 @@ echo ""
 
 # Step 1: Check SSH connection (skip in local mode)
 if ! $LOCAL_MODE; then
-    echo "📡 Testing SSH connection..."
+    echo "Testing SSH connection..."
     if ssh -q -o BatchMode=yes -o ConnectTimeout=5 $JETSON_USER@$JETSON_IP exit; then
         echo "SSH connection successful"
     else
@@ -46,13 +46,13 @@ fi
 
 # Step 2: Check/Install ROS 2 on Jetson
 echo ""
-echo "🤖 Checking ROS 2 installation on Jetson..."
+echo "Checking ROS 2 installation on Jetson..."
 if $LOCAL_MODE; then
     if command -v ros2 &> /dev/null; then
         echo 'ROS 2 is already installed'
         ros2 --version
     else
-        echo '📦 Installing ROS 2 Humble...'
+        echo 'Installing ROS 2 Humble...'
         sudo apt update
         sudo apt install -y software-properties-common
         sudo add-apt-repository universe
@@ -71,7 +71,7 @@ else
             echo 'ROS 2 is already installed'
             ros2 --version
         else
-            echo '📦 Installing ROS 2 Humble...'
+            echo 'Installing ROS 2 Humble...'
             sudo apt update
             sudo apt install -y software-properties-common
             sudo add-apt-repository universe
@@ -89,7 +89,7 @@ fi
 
 # Step 3: Install additional dependencies
 echo ""
-echo "📦 Installing required dependencies..."
+echo "Installing required dependencies..."
 if $LOCAL_MODE; then
     sudo apt update
     sudo apt install -y python3-pip python3-serial python3-matplotlib python3-numpy
@@ -106,7 +106,7 @@ fi
 
 # Step 4: Create workspace on Jetson
 echo ""
-echo "📁 Creating workspace on Jetson..."
+echo "Creating workspace on Jetson..."
 if $LOCAL_MODE; then
     mkdir -p ~/robot_ws/src
     echo 'Workspace created'
@@ -119,7 +119,7 @@ fi
 
 # Step 5: Transfer package files
 echo ""
-echo "📤 Transferring robot package to Jetson..."
+echo "Transferring robot package to Jetson..."
 # Resolve repo root regardless of where the script is called from
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$SCRIPT_DIR"
@@ -145,7 +145,7 @@ echo "Package transferred successfully"
 
 # Step 6: Build on Jetson
 echo ""
-echo "🔨 Building package on Jetson..."
+echo "Building package on Jetson..."
 if $LOCAL_MODE; then
     cd ~/robot_ws
     source /opt/ros/humble/setup.bash
@@ -162,13 +162,13 @@ fi
 
 # Step 7: Create hardware launch script
 echo ""
-echo "⚙️ Creating hardware launch script..."
+echo "Creating hardware launch script..."
 if $LOCAL_MODE; then
 cat > ~/robot_ws/launch_hardware.sh << 'EOF'
 #!/bin/bash
 # Hardware launch script for Jetson
 
-echo '🤖 Starting Ackermann Robot Hardware System'
+echo 'Starting Ackermann Robot Hardware System'
 cd ~/robot_ws
 source install/setup.bash
 
@@ -198,7 +198,7 @@ ssh $JETSON_USER@$JETSON_IP "cat > ~/robot_ws/launch_hardware.sh << 'EOF'
 #!/bin/bash
 # Hardware launch script for Jetson
 
-echo '🤖 Starting Ackermann Robot Hardware System'
+echo 'Starting Ackermann Robot Hardware System'
 cd ~/robot_ws
 source install/setup.bash
 
@@ -229,7 +229,7 @@ fi
 echo ""
 echo "Deployment Complete!"
 echo ""
-echo "📋 Next Steps:"
+echo "Next Steps:"
 echo "1. SSH to Jetson: ssh $JETSON_USER@$JETSON_IP"
 echo "2. Connect hardware:"
 echo "   - STM32 controller via USB (should appear as /dev/ttyACM0)"
@@ -237,7 +237,7 @@ echo "   - Servo controllers via USB-RS485 (should appear as /dev/ttyUSB0)"
 echo "3. Launch system: ~/robot_ws/launch_hardware.sh"
 echo "4. Control robot: ros2 run teleop_twist_keyboard teleop_twist_keyboard"
 echo ""
-echo "🔧 Hardware Configuration:"
+echo "Hardware Configuration:"
 echo "   - STM32: /dev/ttyACM0, 115200 baud"
 echo "   - Servos: /dev/ttyUSB0, 38400 baud, Modbus IDs 2,3"
 echo ""

@@ -1,0 +1,32 @@
+[1.287s] Invoking command in '/home/sakar_gaurd/firmware/ros2_workspace/src/ackermann_robot': PYTHONPATH=/home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ackermann_robot build --build-base /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build install --record /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/install.log --single-version-externally-managed install_data
+[1.716s] running egg_info
+[1.717s] writing ../../build/ackermann_robot/ackermann_robot.egg-info/PKG-INFO
+[1.718s] writing dependency_links to ../../build/ackermann_robot/ackermann_robot.egg-info/dependency_links.txt
+[1.718s] writing entry points to ../../build/ackermann_robot/ackermann_robot.egg-info/entry_points.txt
+[1.718s] writing requirements to ../../build/ackermann_robot/ackermann_robot.egg-info/requires.txt
+[1.718s] writing top-level names to ../../build/ackermann_robot/ackermann_robot.egg-info/top_level.txt
+[1.722s] reading manifest file '../../build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[1.760s] writing manifest file '../../build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[1.761s] running build
+[1.761s] running build_py
+[1.761s] copying ackermann_robot/kinematics_node.py -> /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[1.761s] copying ackermann_robot/hardware_interface.py -> /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[1.761s] copying ackermann_robot/motor_driver.py -> /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot
+[1.762s] running install
+[1.763s] running install_lib
+[1.764s] copying /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/kinematics_node.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.765s] copying /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/hardware_interface.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.765s] copying /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build/lib/ackermann_robot/motor_driver.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.766s] byte-compiling /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/kinematics_node.py to kinematics_node.cpython-310.pyc
+[1.772s] byte-compiling /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/hardware_interface.py to hardware_interface.cpython-310.pyc
+[1.774s] byte-compiling /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/motor_driver.py to motor_driver.cpython-310.pyc
+[1.776s] running install_data
+[1.777s] copying launch/ackermann_robot_hardware.launch.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/launch
+[1.777s] running install_egg_info
+[1.780s] removing '/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info' (and everything under it)
+[1.781s] Copying ../../build/ackermann_robot/ackermann_robot.egg-info to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-1.0.0-py3.10.egg-info
+[1.783s] running install_scripts
+[1.821s] Installing hardware_interface script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+[1.821s] Installing kinematics_node script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+[1.822s] writing list of installed files to '/home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/install.log'
+[1.886s] Invoked command in '/home/sakar_gaurd/firmware/ros2_workspace/src/ackermann_robot' returned '0': PYTHONPATH=/home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ackermann_robot build --build-base /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/build install --record /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/install.log --single-version-externally-managed install_data

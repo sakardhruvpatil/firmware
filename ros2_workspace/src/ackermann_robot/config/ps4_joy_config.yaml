@@ -1,0 +1,56 @@
+# PS4 Controller Configuration for Ackermann Robot
+# This configuration maps PS4 controller inputs to robot motion commands
+
+# Joy node parameters
+joy_node:
+  ros__parameters:
+    device_id: 0  # First joystick device
+    deadzone: 0.1
+    autorepeat_rate: 20.0  # Hz
+
+# Teleop twist joy parameters  
+teleop_twist_joy_node:
+  ros__parameters:
+    # Axis mappings for PS4 controller (DS4)
+    axis_linear:
+      x: 1  # Left stick vertical (forward/backward)
+    axis_angular:
+      yaw: 0  # Left stick horizontal (turning)
+    
+    # Scale factors for motion
+    scale_linear:
+      x: 1.0  # Maximum linear velocity (m/s)
+    scale_angular:
+      yaw: 1.5  # Maximum angular velocity (rad/s)
+    
+    # Enable button (must be held for movement)
+    enable_button: 4  # L1 button for safety
+    enable_turbo_button: 5  # R1 button for turbo mode
+    
+    # Turbo mode scaling (when R1 is pressed)
+    scale_linear_turbo:
+      x: 2.0  # Increased speed in turbo mode
+    scale_angular_turbo:
+      yaw: 3.0  # Increased turning speed in turbo mode
+    
+    # Optional: Use different sticks
+    # Right stick can be used for fine control
+    # axis_linear:
+    #   x: 4  # Right stick vertical
+    # axis_angular:
+    #   yaw: 3  # Right stick horizontal
+    
+    # Button assignments for additional functions
+    # Button 0: X button
+    # Button 1: Circle button  
+    # Button 2: Triangle button
+    # Button 3: Square button
+    # Button 4: L1 button (enable)
+    # Button 5: R1 button (turbo)
+    # Button 6: L2 button
+    # Button 7: R2 button
+    # Button 8: Share button
+    # Button 9: Options button
+    # Button 10: PlayStation button
+    # Button 11: Left stick press
+    # Button 12: Right stick press

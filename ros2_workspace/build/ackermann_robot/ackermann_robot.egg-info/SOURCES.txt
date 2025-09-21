@@ -12,5 +12,7 @@ ackermann_robot/hardware_interface.py
 ackermann_robot/kinematics_node.py
 ackermann_robot/motor_driver.py
 config/hardware_params.yaml
+config/ps4_joy_config.yaml
 launch/ackermann_robot_hardware.launch.py
+launch/ackermann_robot_joystick.launch.py
 resource/ackermann_robot

@@ -51,14 +51,14 @@ class HardwareSystemTest:
         }
         
         if stm32_present:
-            logger.info("✓ STM32 device found at /dev/ttyACM0")
+            logger.info("SUCCESS: STM32 device found at /dev/ttyACM0")
         else:
-            logger.error("✗ STM32 device not found")
+            logger.error("ERROR: STM32 device not found")
             
         if servo_present:
-            logger.info("✓ Servo controller found at /dev/ttyUSB0")
+            logger.info("SUCCESS: Servo controller found at /dev/ttyUSB0")
         else:
-            logger.error("✗ Servo controller not found")
+            logger.error("ERROR: Servo controller not found")
             
         return stm32_present and servo_present
     
@@ -86,7 +86,7 @@ class HardwareSystemTest:
                 'status': success
             }
             
-            logger.info("✓ STM32 serial communication successful")
+            logger.info("SUCCESS: STM32 serial communication successful")
             return True
             
         except Exception as e:
@@ -95,7 +95,7 @@ class HardwareSystemTest:
                 'error': str(e),
                 'status': False
             }
-            logger.error(f"✗ STM32 serial communication failed: {e}")
+            logger.error(f"ERROR: STM32 serial communication failed: {e}")
             return False
     
     def test_ros2_installation(self):
@@ -112,9 +112,9 @@ class HardwareSystemTest:
         }
         
         if success:
-            logger.info("✓ ROS 2 Humble is properly installed and sourced")
+            logger.info("SUCCESS: ROS 2 Humble is properly installed and sourced")
         else:
-            logger.error("✗ ROS 2 Humble installation issue")
+            logger.error("ERROR: ROS 2 Humble installation issue")
             logger.error(f"Error: {stderr}")
             
         return success
@@ -129,10 +129,10 @@ class HardwareSystemTest:
         for package in required_packages:
             try:
                 __import__(package)
-                logger.info(f"✓ {package} is available")
+                logger.info(f"SUCCESS: {package} is available")
             except ImportError:
                 missing_packages.append(package)
-                logger.error(f"✗ {package} is missing")
+                logger.error(f"ERROR: {package} is missing")
         
         success = len(missing_packages) == 0
         self.test_results['python_deps'] = {
@@ -152,7 +152,7 @@ class HardwareSystemTest:
         
         workspace_path = Path.home() / "ros2_workspace"
         if not workspace_path.exists():
-            logger.error(f"✗ Workspace not found at {workspace_path}")
+            logger.error(f"ERROR: Workspace not found at {workspace_path}")
             self.test_results['workspace'] = {'status': False, 'error': 'Workspace not found'}
             return False
         
@@ -167,9 +167,9 @@ class HardwareSystemTest:
         }
         
         if success:
-            logger.info("✓ Workspace build successful")
+            logger.info("SUCCESS: Workspace build successful")
         else:
-            logger.error("✗ Workspace build failed")
+            logger.error("ERROR: Workspace build failed")
             logger.error(f"Error: {stderr}")
             
         return success
@@ -188,9 +188,9 @@ class HardwareSystemTest:
         }
         
         if success:
-            logger.info("✓ Hardware launch file found")
+            logger.info("SUCCESS: Hardware launch file found")
         else:
-            logger.error("✗ Hardware launch file not found")
+            logger.error("ERROR: Hardware launch file not found")
             
         return success
     
@@ -229,10 +229,10 @@ class HardwareSystemTest:
         logger.info(f"Failed: {failed}")
         
         if failed == 0:
-            logger.info("✓ All tests passed! Hardware is ready.")
+            logger.info("SUCCESS: All tests passed! Hardware is ready.")
             return True
         else:
-            logger.error("✗ Some tests failed. Check issues above.")
+            logger.error("ERROR: Some tests failed. Check issues above.")
             return False
     
     def get_system_info(self):

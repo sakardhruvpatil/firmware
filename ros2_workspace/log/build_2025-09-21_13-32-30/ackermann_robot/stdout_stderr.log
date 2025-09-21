@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing ackermann_robot.egg-info/PKG-INFO
+writing dependency_links to ackermann_robot.egg-info/dependency_links.txt
+writing entry points to ackermann_robot.egg-info/entry_points.txt
+writing requirements to ackermann_robot.egg-info/requires.txt
+writing top-level names to ackermann_robot.egg-info/top_level.txt
+reading manifest file 'ackermann_robot.egg-info/SOURCES.txt'
+writing manifest file 'ackermann_robot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/lib/python3.10/site-packages/ackermann-robot.egg-link (link to .)
+Installing hardware_interface script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+Installing kinematics_node script to /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/bin
+
+Installed /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot
+running symlink_data
+symbolically linking /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/resource/ackermann_robot -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ament_index/resource_index/packages
+symbolically linking /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/package.xml -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot
+symbolically linking /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/launch/ackermann_robot_hardware.launch.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/launch
+symbolically linking /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/launch/ackermann_robot_joystick.launch.py -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/launch
+symbolically linking /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/config/hardware_params.yaml -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/config
+symbolically linking /home/sakar_gaurd/firmware/ros2_workspace/build/ackermann_robot/config/ps4_joy_config.yaml -> /home/sakar_gaurd/firmware/ros2_workspace/install/ackermann_robot/share/ackermann_robot/config
